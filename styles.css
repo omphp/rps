@@ -1,0 +1,157 @@
+* { margin: 0; padding: 0;}
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#scoreContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+body, html {
+    height: 100%;
+  }
+  
+.bg {
+    background-image: url("./images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#pChoices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    rotate: 135deg;
+}
+.icons {
+    rotate: -135deg;
+}
+
+#choiceContainer {
+    align-self: flex-start;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+#paper {
+    
+}
+
+.sClass {
+    margin-left: -90px;
+}
+
+.pSelect {
+    margin-left:80px;
+}
+
+.rotate {
+    transition: transform 1s linear;
+}
+
+#cChoiceContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 200px;
+}
+
+#choicesContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#cChoices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    rotate: -45deg;
+}
+
+#textContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.scoreText {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+    font-weight: 900;
+    color: #488cfc;
+
+}
+
+.cIcons {
+    rotate: 45deg;
+    transform: scalex(-1) 
+}
+.cSelect {
+    margin-left:-205px;
+    justify-content: center;
+}
+.cRotate {
+    transition: transform 2s ease-out;
+}
+
+.button {
+    background-color: #488cfc;
+    border: solid rgb(1, 11, 26);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 100px;
+    margin-top: 150px;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+
+  .button:hover:enabled {background-color: #328bff}
+
+  .button:active:enabled {
+    background-color: #043c70;
+    transform: translateY(4px);
+  }
+
+  button:disabled{
+  background-color: #707179;
+  color: #ffffff;
+}
+

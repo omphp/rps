@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="rps.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="rps.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <div id="mainContainer" class="bg">
+        <div id="container">
+            <div id="playerChoice">
+                <img src="./images/player.png" width="250px" height="250px" alt="player icon">
+            </div>
+            <div id="computerChoice">
+                 <img src="./images/cpu.png" width="250px" height="250px" alt="cpu icon">
+            </div>
+        </div>
+        <div id="choicesContainer">
+            <div id="choiceContainer">
+                <div id="pChoices" class="default">
+                    <div id="rock" class="pChoice">
+                        <img src="./images/rock.png" width="150px" height="150px" alt="rock icon" class="icons">
+                    </div>
+                    <div id="paper" class="pChoice">
+                        <img src="./images/paper.png" width="150px" height="150px" alt="paper icon" class="icons">
+                    </div>
+                    <div id="scissors" class="pChoice">
+                        <img src="./images/scissors.png" width="150px" height="150px" alt="scissors icon" class="icons">
+                    </div>
+                </div>
+                <div id="up" class="sClass">
+                    <img src="./images/up.png" id="upImg" class="Btn" width="125px" height="125px" alt="up icon">
+                </div>
+                <div id="pSelect" class="pSelect">
+                    <img src="./images/pSelect.png" width="125px" height="125px" alt="up icon">
+                </div>
+                <div id="down" class="sClass">
+                    <img src="./images/down.png" id="downImg" class="Btn" width="125px" height="125px" alt="up icon">
+                </div>
+            </div>
+            <button class="button" id="playGame" onclick="playGame()">Play Game</button>
+            <div id="cChoiceContainer">
+                <div id="cSelect" class="cSelect">
+                    <img src="./images/cSelect.png" width="125px" height="125px" alt="up icon">
+                </div>
+                <div id="cChoices" class="default">
+                    <div id="rock" class="cChoice">
+                        <img src="./images/rock.png" width="150px" height="150px" alt="rock icon" class="cIcons">
+                    </div>
+                    <div id="scissors" class="cChoice">
+                        <img src="./images/scissors.png" width="150px" height="150px" alt="scissors icon" class="cIcons">
+                    </div>
+                    <div id="paper" class="cChoice">
+                        <img src="./images/paper.png" width="150px" height="150px" alt="paper icon" class="cIcons">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="textContainer">
+            <div id="playerScore" class="scoreText">0</div>
+            <div id="winner" class="scoreText"></div>
+            <div id="computerScore" class="scoreText">0</div>
+        </div>
+    </div>
 </body>
 </html>
